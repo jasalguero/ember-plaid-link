@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const OPTIONS = ['clientName', 'product', 'key', 'env', 'webhook', 'longtail', 'selectAccount', 'token'];
+const OPTIONS = ['clientName', 'product', 'key', 'env', 'webhook', 'longtail', 'selectAccount', 'token', 'apiVersion'];
 const DEFAULT_LABEL = 'Link Bank Account';
 
 export default Ember.Component.extend({
