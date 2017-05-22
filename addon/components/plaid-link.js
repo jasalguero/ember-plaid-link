@@ -8,6 +8,7 @@ export default Ember.Component.extend({
   type: 'button',
   action: 'processPlaidToken',
   attributeBindings: ['type'],
+  apiVersion: 'v2',
 
   label: DEFAULT_LABEL,
   institution: null,
