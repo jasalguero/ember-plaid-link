@@ -23,6 +23,9 @@ ENV['ember-plaid'] = {
 
 Check the [Link Docs](https://github.com/plaid/link#custom-integration) for all of the parameter options.
 
+The script tag adding Plaid JS will be automatically added to the body of the
+HTML. To disable this option, you can add `scriptTag: false` to `ember-plaid`.
+
 ## Usage
 
 ```hbs
