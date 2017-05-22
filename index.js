@@ -2,10 +2,10 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-plaid-v2',
+  name: 'ember-plaid',
 
   contentFor: function(type, config) {
-    if (type === 'body' && !(config['ember-plaid'].scriptTag === false)) {
+    if (type === 'body' && (config['ember-plaid'].scriptTag !== false)) {
       return '<script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>';
     }
   },

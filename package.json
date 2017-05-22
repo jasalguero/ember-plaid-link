@@ -1,5 +1,5 @@
 {
-  "name": "ember-plaid-v2",
+  "name": "ember-plaid",
   "version": "0.5.0",
   "description": "Plaid Link for your Ember app",
   "directories": {
