@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-plaid',
+  name: 'ember-plaid-v2',
 
   contentFor: function(type, config) {
     if (type === 'body' && !(config['ember-plaid'].scriptTag === false)) {
