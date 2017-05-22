@@ -6,7 +6,8 @@ module.exports = function(/* environment, appConfig */) {
       clientName: null,
       product: 'auth',
       key: 'test_key',
-      env: 'tartan'
+      env: 'sandbox',
+      apiVersion: 'v2'
     }
   };
 };
