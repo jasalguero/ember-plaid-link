@@ -2,11 +2,13 @@ import Ember from 'ember';
 
 const OPTIONS = ['clientName', 'product', 'key', 'env', 'webhook', 'longtail', 'selectAccount', 'token', 'apiVersion'];
 const DEFAULT_LABEL = 'Link Bank Account';
+const {get} = Ember;
 
 export default Ember.Component.extend({
   tagName: 'button',
   type: 'button',
-  action: 'processPlaidToken',
+  onSuccess: Ember.K(),
+  onCancel: Ember.K(),
   attributeBindings: ['type'],
   apiVersion: 'v2',
 
@@ -35,6 +37,10 @@ export default Ember.Component.extend({
   }),
 
   _onSuccess: function(token, meta) {
-    this.sendAction('action', token, meta);
+    get(this, 'onSuccess')(token, meta);
+  },
+
+  _onCancel: function(error, meta) {
+    get(this, 'onCancel')(error, meta);
   }
 });
