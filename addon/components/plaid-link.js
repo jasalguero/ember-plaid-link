@@ -30,7 +30,8 @@ export default Ember.Component.extend({
 
   _setup: Ember.on('init', function() {
     const options = Ember.merge(this.getProperties(OPTIONS), {
-      onSuccess: this._onSuccess.bind(this)
+      onSuccess: this._onSuccess.bind(this),
+      onExit: this._onCancel.bind(this)
     });
 
     this._link = Plaid.create(options);
