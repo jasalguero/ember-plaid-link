@@ -7,8 +7,8 @@ const {get} = Ember;
 export default Ember.Component.extend({
   tagName: 'button',
   type: 'button',
-  onSuccess: Ember.K(),
-  onCancel: Ember.K(),
+  onSuccess: Ember.K,
+  onCancel: Ember.K,
   attributeBindings: ['type'],
   apiVersion: 'v2',
 
