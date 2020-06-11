@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Ember Plaid Link Demo</h2>
 
-{{outlet}}
+<h3>Test credentials</h3>
+Username: <strong>user_good</strong><br/>
+Password: <strong>pass_good</strong><br/><br/>
+
+<PlaidLink id="link-plaid-button"
+              @onSuccess={{fn this.success}}
+              @onLoad={{fn this.openedLink}}
+              @onExit={{fn this.exited}}>
+  Click to launch Plaid Link Component
+</PlaidLink>
