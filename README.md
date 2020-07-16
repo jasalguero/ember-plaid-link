@@ -6,7 +6,7 @@
 
 ```bash
 # From within your ember-cli project
-ember install ember-plaid
+ember install ember-plaid-link
 ```
 
 ## Configuration
