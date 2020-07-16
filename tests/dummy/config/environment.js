@@ -24,9 +24,12 @@ module.exports = function(environment) {
 
     "ember-plaid": {
       clientName: "Dummy Software",
-      product: ['transactions'],
+      product: ['auth'],
       key: 'PUBLIC_KEY',
-      env: 'sandbox'
+      env: 'sandbox',
+      countryCodes: ['US'],
+      webhook: 'https://webhook.site/d63fcafa-f155-4275-b539-6cb8e65f0e76',
+      language: 'en'
     }
   };
 

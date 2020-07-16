@@ -8,8 +8,8 @@ export default class BlogPostController extends Controller {
   }
 
   @action
-  success(token) {
-    window.console.log("success with token:", token);
+  success(token, meta) {
+    window.console.log("success with token:", token, meta);
   }
 
   @action
