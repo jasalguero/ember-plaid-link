@@ -1,6 +1,6 @@
 {
   "name": "ember-plaid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plaid Link for your Ember app",
   "keywords": [
     "ember-addon"
