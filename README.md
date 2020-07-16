@@ -1,4 +1,4 @@
-# ember-plaid
+# ember-plaid-link
 
 [Plaid's](https://plaid.com/) drop-in Link module as an Ember component.
 
